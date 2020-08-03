@@ -4,10 +4,9 @@
   "private": true,
   "homepage": "https://jhdenterprises.biz",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "heroku-postbuild" : "NPM_CONFIG_PRODUCTION=false npm install && npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
